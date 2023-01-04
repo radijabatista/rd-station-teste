@@ -1,0 +1,120 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.modalActive {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+header {
+  display: flex;
+  max-width: 1440px;
+  padding: 0px 75px 0 90px;
+}
+
+.container {
+  column-count: 3;
+}
+
+.invalid-field {
+  color: red;
+}
+
+footer {
+  display: flex;
+  max-width: 1440px;
+  padding: 0px 75px 0 90px;
+}
+
+/*FONTES*/
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(../fonts/NunitoSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DarkerGrotesque';
+  src: url(../fonts/DarkerGrotesque-ExtraBold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*CABEÇALHO*/
+
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CFD3D8;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 16px;
+  position: absolute;
+}
+
+/*FIM DE CABEÇALHO */
+
+/*FOOTER*/
+.footer {
+  background-color: #19C1CE;
+  border-bottom: 1px solid #CFD3D8;
+}
+
+.footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 16px;
+  position: absolute;
+}
+
+/*FIM DO FOOTER*/
+
+/*FUNCIONALIDADE MENU HAMBURGUER*/
+div.menu-link {
+  padding: 16px;
+  color: #212429;
+}
+
+/*QUANDO A TELA FOR PEQUENA, CENTRALIZA O CONTEUDO E ANIMA AS TRANSIÇÕES*/
+nav[role=navigation] {
+  clear: both;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  margin: 0px 0px 0px -50px;
+}
+
+/*FIM DE TELA FOR PEQUENA, CENTRALIZA O CONTEUDO E ANIMA AS TRANSIÇÕES*/
+
+/*POSICIONA A NAVBAR QUANDO ELA APARECE MODO DE TELA PEQUENA*/
+nav[role=navigation].open {
+  max-height: 20em;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+/*FIM DE NAVBAR QUANDO ELA APARECE MODO DE TELA PEQUENA*/
